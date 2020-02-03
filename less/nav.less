@@ -130,21 +130,7 @@ table {
 
 
 
-#bg{
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-background: #38a8d1;
-background: -moz-linear-gradient(top,  #38a8d1 0%, #34bc9a 36%, #34bc9a 57%, #8645f7 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38a8d1), color-stop(36%,#34bc9a), color-stop(57%,#34bc9a), color-stop(100%,#8645f7));
-background: -webkit-linear-gradient(top,  #38a8d1 0%,#34bc9a 36%,#34bc9a 57%,#8645f7 100%);
-background: -o-linear-gradient(top,  #38a8d1 0%,#34bc9a 36%,#34bc9a 57%,#8645f7 100%);
-background: -ms-linear-gradient(top,  #38a8d1 0%,#34bc9a 36%,#34bc9a 57%,#8645f7 100%);
-background: linear-gradient(to bottom,  #38a8d1 0%,#34bc9a 36%,#34bc9a 57%,#8645f7 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a8d1', endColorstr='#8645f7',GradientType=0 );
-}
+
 
 * {
   box-sizing: border-box;
@@ -166,6 +152,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  
 }
 
 .logo {
@@ -196,5 +183,7 @@ button {
 }
 
 button:hover{
-  background-color: rgba(0, 136, 169, 0.8);
+  background: rgb(58,180,168);
+background: linear-gradient(90deg, rgba(58,180,168,1) 0%, rgba(29,124,253,1) 31%, rgba(56,188,161,1) 75%, rgba(82,252,69,1) 100%);
+transition: 0.3s
 }
