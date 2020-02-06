@@ -130,7 +130,6 @@ table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #505258;
 }
 li,
 a,
@@ -146,6 +145,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  background-color: #505258;
 }
 .logo {
   cursor: pointer;
@@ -173,4 +173,61 @@ button:hover {
   background: #3ab4a8;
   background: linear-gradient(90deg, #3ab4a8 0%, #1d7cfd 31%, #38bca1 75%, #52fc45 100%);
   transition: 0.3s;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  background: url('../img/foto.jpeg');
+  background-size: cover;
+}
+.slider .logo-slider {
+  flex-grow: 4;
+  order: -1;
+  width: 100%;
+}
+.slider .logo-slider img {
+  width: 25%;
+}
+@media screen and (max-width: 600px) {
+  .slider .logo-slider img {
+    width: 100%;
+  }
+}
+.slider .pet {
+  align-self: flex-start;
+  flex-grow: 1;
+  order: 1;
+  align-content: center;
+  width: 30%;
+}
+.slider .pet img {
+  display: block;
+  margin: 0 0 0 auto;
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .slider .pet img {
+    width: 100%;
+  }
+}
+.slider .thing {
+  align-self: center;
+  flex-grow: 1;
+  order: 1;
+  padding: 5em 0;
+  background: #020024;
+  background: -moz-linear-gradient(90deg, #020024 0%, #090979 40%, #00d4ff 91%);
+  background: -webkit-linear-gradient(90deg, #020024 0%, #090979 40%, #00d4ff 91%);
+  background: linear-gradient(90deg, #020024 0%, #090979 40%, #00d4ff 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
+  width: 50%;
+}
+.slider .thing p {
+  display: block;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: white;
 }
